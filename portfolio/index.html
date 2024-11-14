@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/d962d80dd4.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="/images/logo.png" alt="logo image" />
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+          <h1>I am <span>Pranjal Pal</span></h1>
+          <p>
+            I am IT Student passionate about <br />
+            <span><b>Websites Design</b></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <img src="/images/user.png" alt="" />
+          </div>
+          <div class="col-2">
+            <h1>About me</h1>
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quaerat, ea, ex voluptates harum amet sed obcaecati error similique excepturi quos optio! Officiis, necessitatibus saepe. Voluptatum obcaecati dolore aliquam cum saepe officiis fugit, ipsum esse quo, voluptates aliquid molestias ipsa voluptas nulla omnis nostrum, provident sit. Omnis architecto voluptas laborum nulla tenetur praesentium earum? Doloremque laboriosam adipisci similique voluptatibus minus!
+            </p>
+            <div class="tab-titles">
+              <div class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </div>
+              <div class="tab-links" onclick="opentab('experience')">
+                Experience
+              </div>
+              <div class="tab-links" onclick="opentab('education')">
+                Education
+              </div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>2020-2021</span><br />Skills from ST.Appollonia's</li>
+                <li>
+                  <span>2021-2023</span><br />11<sup>th</sup>, 12<sup>th</sup>
+                  from Abhinav College
+                </li>
+                <li>
+                  <span>2023-Present</span><br />
+                  BSC IT from Satheye College
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2020-2021</span><br />Education from ST.Appollonia's</li>
+                <li>
+                  <span>2021-2023</span><br />11<sup>th</sup>, 12<sup>th</sup>
+                  from Abhinav College
+                </li>
+                <li>
+                  <span>2023-Present</span><br />
+                  BSC IT from Satheye College
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2020-2021</span><br />Experience from ST.Appollonia's</li>
+                <li>
+                  <span>2021-2023</span><br />11<sup>th</sup>, 12<sup>th</sup>
+                  from Abhinav College
+                </li>
+                <li>
+                  <span>2023-Present</span><br />
+                  BSC IT from Satheye College
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- portfolio -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="">
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est officia alias iustom cum consequuntur ducimus enim at.</p>
+            </div>
+            
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="">
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est officia alias iustom cum consequuntur ducimus  enim at.</p>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="">
+            <div class="layer">
+              <h3>Portfolio</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est officia alias iustom cum consequuntur ducimus quasi necessitatibus</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-1">
+            <h1>Contact Me</h1>
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>palpranjal75389@gmai.com</span><br>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 7208729455</span><br>
+           <div class="social-handles">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+           </div>
+
+
+          </div>
+          <div class="col-2">
+            <form name="submit-to-google-sheet">
+              <input type="text" class="name" placeholder="Enter Your Name" name="name" required>
+              <input type="email" class="email" placeholder="Your Email"  name="email" required>
+              <textarea type="text" class="message"  placeholder="Your message"name="message" rows="4"></textarea><br>
+              <button type="submit" class="form-submit">Submit</button>
+              <p class="submit-message"></p>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+      }
+    </script>
+    
+    
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwJekGGSFUDd6b6ia04FqhMMH8UaBRYRe_dUqKZ96hg2J4GXeXJ4UccinqpOG0MUsfy/exec';
+      const form = document.forms['submit-to-google-sheet'];
+      const submitMessage = document.querySelector(".submit-message");
+
+    
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();  // Prevent the form from submitting the traditional way
+        fetch(scriptURL, { 
+          method: 'POST', 
+          body: new FormData(form) 
+        })
+        .then(response => {
+          
+          submitMessage.innerHTML="Your Form is succesfully Submitted🎉🎊";
+          submitMessage.style.cssText = 'color: green; font-weight: bold;';
+          form.reset();
+        })
+        .catch(error => {
+          submitMessage.innerHTML="Your Form is not Submitted 😭❌";
+        });
+      });
+    </script>
+  </body>
+</html>
