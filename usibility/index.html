@@ -14,14 +14,14 @@
     <!-- header section -->
     <div class="containers">
       <header>
-        <nav class="navbar">
+        <nav class="navbar fixed-top">
           <div class="logo">
-            <img src="/images/logo.png" alt="" />
+            <img src="./images/logo.png" alt="" />
           </div>
           <div class="nav-list">
             <ul>
-              <li>Product</li>
-              <li>Customer</li>
+              <li> <a href="#product"> Product</a> </li>
+              <li><a href="#customer" >Customer</a></li>
               <li>Pricing</li>
               <li>Resources</li>
               <button class="btn btn-secondary">Sign In</button>
@@ -34,7 +34,7 @@
       <div class="containers">
         <div class="hero-section">
           <div class="hero-title">
-            <h2>Design Confidently</h2>
+            <h2 class="h2">Design Confidently</h2>
             <p>
               UsabilyHub is a remote user research plateform that takes the
               guesswork out of design decisions by validating them with real
@@ -49,7 +49,8 @@
       </div>
     </div>
     <!-- companies Clients -->
-    <p class="com-moto">
+     <div id="customer" class="p-4">
+    <p class="com-moto mt-5" >
       The worlds best companies rely on UsabilityHub to make better design
       decisions.
     </p>
@@ -60,9 +61,10 @@
       <img src="images/client/box.jpeg" alt="" />
       <img src="images/client/asana.jpg" alt="" />
     </div>
-
+  </div>
     <!-- companies Products -->
-    <div class="features center">
+     <div class="pt-2" id="product">
+    <div class="features center mt-5">
       <h2 class="h2">Your user research Swiss Army knife</h2>
       <button class="btn btn-secondary">
         See All Features
@@ -119,6 +121,8 @@
         </button>
       </div>
     </div>
+  </div>
+</div>
     <!-- Services -->
     <div class="service-section">
       <div class="services">
@@ -127,12 +131,12 @@
         </div>
         <div class="service-text">
           <h2 class="text-secondary">Effortless validation for</h2>
-          <h1>Design professionals</h1>
+          <h1 class="h1">Design professionals</h1>
           <p>
             Test interfaces, interaction flows, iconography and more, to help
             you create intuitive and delightful experiences for your users.
           </p>
-          <h2>ChartMogul logo</h2>
+          <h2 class="h2">ChartMogul logo</h2>
           <p>
             The navigation test is god's gift to UI designers, it probably has
             the best power-to-simplicity ratio of any software, ever.
@@ -150,12 +154,12 @@
         </div>
         <div class="service-text">
           <h2 class="text-secondary">Effortless validation for</h2>
-          <h1>Design professionals</h1>
+          <h1 >Design professionals</h1>
           <p>
             Test interfaces, interaction flows, iconography and more, to help
             you create intuitive and delightful experiences for your users.
           </p>
-          <h2>ChartMogul logo</h2>
+          <h2 class="h2">ChartMogul logo</h2>
           <p>
             The navigation test is god's gift to UI designers, it probably has
             the best power-to-simplicity ratio of any software, ever.
@@ -173,12 +177,12 @@
         </div>
         <div class="service-text">
           <h2 class="text-secondary">Effortless validation for</h2>
-          <h1>Design professionals</h1>
+          <h1 class="h1">Design professionals</h1>
           <p>
             Test interfaces, interaction flows, iconography and more, to help
             you create intuitive and delightful experiences for your users.
           </p>
-          <h2>ChartMogul logo</h2>
+          <h2 class="h2">ChartMogul logo</h2>
           <p>
             The navigation test is god's gift to UI designers, it probably has
             the best power-to-simplicity ratio of any software, ever.
@@ -194,7 +198,7 @@
 
     <!-- Example -->
     <div class="example-header">
-      <h1>One platform, endless possibilities</h1><br>
+      <h1 class="h1">One platform, endless possibilities</h1><br>
       <button class="btn btn-secondary">See More Examples <i class="fa-solid fa-arrow-right"></i></button>
     </div>
     <div class="example-card">
@@ -217,7 +221,7 @@
       
     </div>
     <div class="start-test-section">
-        <h1>Start testing today</h1>
+        <h1 class="h1">Start testing today</h1>
       <p>Take the guesswork out of design decisions</p>
       <button class="btn btn-primary">Get Started</button>
       
@@ -227,7 +231,7 @@
       <div class="footer-nav">
         <div class="Product">
           <ul>
-            <h2>Product</h2>
+            <h2 class="h2">Product</h2>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#panel">UsabilityHub Panel</a></li>
             <li><a href="#customers">Customers</a></li>
@@ -238,7 +242,7 @@
         </div>
         <div class="Resources">
           <ul>
-            <h2>Resources</h2>
+            <h2 class="h2">Resources</h2>
             <li><a href="#examples">Examples</a></li>
             <li><a href="#guides">Testing Guides</a></li>
             <li><a href="#help">Help Center</a></li>
@@ -249,7 +253,7 @@
         </div>
         <div class="Methodlogy">
           <ul>
-            <h2>Methodlogy</h2>
+            <h2 class="h2">Methodlogy</h2>
             <li><a href="#card-sorting">Card Sorting</a></li>
             <li><a href="#prototype-testing">Prototype Testing</a></li>
             <li><a href="#first-click-tests">First Click Tests</a></li>
