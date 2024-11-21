@@ -1,0 +1,257 @@
+
+:root{
+    --c-dark:#212529;
+    --c-brand:#4e57d4;
+    --c-dark-light:#6970dd;
+    --c-dark-rgb:78,87,212;
+    --c-body:#727272;
+    --font-base: 'Fira Code',sans-serif;
+    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --transition: all 0.5s ease;
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1   {
+    font-weight: 900 !important;
+}
+h2{
+    font-weight: 600 !important;
+}
+p{
+    font-weight: 400;
+}
+.section-padding{
+    padding: 2rem 0 4rem 0 ;
+}
+img{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+/* navbar  */
+.navbar{
+    background-color: #6970dd !important;
+    box-shadow: 0 4px 4px grey;
+}
+.nav-link{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+ .navbar .btn{
+    max-width: 150px;
+    font-weight: 600;
+    
+
+}
+.btn:hover,.nav-link:hover{
+    color:rgb(248, 91, 235) !important;
+    
+}
+.navbar-nav .btn{
+    text-transform: uppercase;
+}
+/* hero section */
+#hero{
+    display: flex;
+    height: 100vh;
+    background:url(images/hero-1.jpg);
+    justify-content: center;
+    align-items: center;
+}
+#hero h1{
+    font-size: 80px;
+
+}
+#hero .btn{
+    padding: 5px 15px;
+    font-weight: 600;
+    font-size: x-large;
+}
+#hero .btn:hover{
+    background-color: rgba(255, 255, 255, 0.19);
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0)!important;
+}
+/* about us  */
+
+.line{
+    height: 5px;
+    width: 100px;
+    margin: 15px auto;
+    background-color: rebeccapurple;
+}
+.title h1,h2,h3,h4,h5,h6{
+    text-transform: capitalize;
+}
+.title p{
+   
+    font-weight: 400;
+}
+i{
+    padding: 20px;
+    margin: 10px;
+    background-color: #0010f650;
+    border-radius: 10px;
+
+}
+/* services  */
+
+/* .service{
+    position: relative;
+    cursor: pointer;
+    background-color:bisque;
+    border-radius: 10px;
+    border:3px solid blue;
+    transition: var(--transition);
+    
+}
+.service::after{
+    content: '';
+    position:absolute;
+    height:50px;
+    width: 50px;
+    background-color: rgb(134, 199, 241);
+    right: 0px;
+    bottom:0px;
+    z-index: 200;
+}
+.service:hover::after{
+    width: 100%;
+    height: 100%;
+} */
+
+/* copied  */
+/* ICONBOX */
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+}
+
+/* SERVICE */
+.service {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb), 0.2);
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+}
+.service:hover i{
+    background-color: #6970dd;
+}
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+.service .iconbox{
+    margin:2rem 0 0 0;
+}
+.service:hover .iconbox {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+
+/* counter  */
+#counter{
+    color:white;
+    background:  url(./images/counter.jpg)  ;
+}
+
+/* portfolio  */
+
+#portfolio img{
+    cursor: pointer;
+}
+/* testimonial  */
+#testimoial{
+ 
+}
+.msg{
+   background-color: #6e77fc;
+   border-radius: 10px;
+}
+.fa-star{
+    color:yellow;
+   
+}
+
+/* team member  */
+.team-card{
+    position: relative;
+    cursor: pointer;
+}
+.team-card:hover .team-content{
+    opacity: 1;
+    bottom:50px
+}
+
+.team-content{
+    border-radius: 20px;
+    background-color: var(--c-brand);
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    width: calc(100% - 150px);
+    transform: translateX(-50%);
+    padding: 24px;
+    transition: var(--transition);
+    opacity: 0;
+}
+ 
+/* contact  */
+form{
+    max-width: 500px !important;
+
+}
+
+/* blog  */
+
+.blog-link{
+    text-decoration: none;
+}
+#footer{
+    background-color: #3e3f42;
+    color:white;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.social-links i{
+    cursor: pointer;
+    font-size: x-large;
+}
