@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Code",'Courier New', Courier, monospace;
+}
+:root {
+    /* Color Palette */
+    --prussian-blue: #012a4aff;
+--indigo-dye: #013a63ff;
+--indigo-dye-2: #01497cff;
+--indigo-dye-3: #014f86ff;
+--ucla-blue: #2a6f97ff;
+--cerulean: #2c7da0ff;
+--air-force-blue: #468fafff;
+--air-superiority-blue: #61a5c2ff;
+--sky-blue: #89c2d9ff;
+--light-blue: #a9d6e5ff;
+
+/* others */
+--alice-blue: #e3f2fdff;
+--uranian-blue: #bbdefbff;
+--light-sky-blue: #90caf9ff;
+--argentinian-blue: #64b5f6ff;
+--argentinian-blue-2: #42a5f5ff;
+--dodger-blue: #2196f3ff;
+--bleu-de-france: #1e88e5ff;
+--french-blue: #1976d2ff;
+--green-blue: #1565c0ff;
+--cobalt-blue: #0d47a1ff;
+  }
+header{
+    background-color:var(--cobalt-blue);
+}
+header .navbar{
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+.navbar .logo{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .logo img{
+    margin: 0 10px;
+height: 40px;
+}
+.navbar .logo span{
+    font-size: 40px;
+}
+.navbar .nav-link {
+    gap:50px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+   
+}
+.navbar .nav-link  a{
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-size: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link  a::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+    background-color: red;
+}
+.navbar .nav-link a:hover::after{
+  
+    width: 100%;
+}
+.section{
+    padding: 10px 2rem;
+}
+/* about us  */
+.about-section h2{
+    text-align: center;
+    margin: 20px ;
+    
+}
+.about{
+    display: flex;
+   
+}
+
+.about-image{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+}
+.about-image img{
+    
+    width: 350px;
+    
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* services  */
+.service-heading h4{
+        color:rgb(238, 54, 54);
+        text-align: center;
+}
+ .section .heading h1{
+    margin:30px;
+    text-align: center;
+    position: relative;
+
+}
+ .section .heading h1::after{
+    content: "";
+    width:15%;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
+    left:43%;
+    background-color: rgb(159, 90, 238);
+}
+.services-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
+    justify-content: center;
+    padding: 0;
+    gap: 25px;
+}
+.service-card{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 3px solid var(--indigo-dye-2);
+    border-radius: 20px;
+    background-color: var(--light-blue);
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+    margin: 10px 0px;
+  
+    transition: .3s;
+}
+.service-card:hover{
+    transform:translateY(-15px )
+}
+.service-card .card-image{
+   padding: 0 20%;
+}
+.service-card .card-image img{
+    margin: 0px auto;
+    padding: 20px;
+    width: 100%;
+}
+.service-card button:hover{
+    background-color: red;
+}
+/* gallery  */
+.gallery-images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:50px;
+}
+.gallery-image{
+
+}
+.gallery-image img{
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+    transition: .6s;
+}
+.gallery-image img:hover{
+    scale:1.1;
+}
+/* choose us  */
+.choose-us{
+    margin:  0;
+    display: flex;
+    align-items: center;
+}
+.choose-us-img{
+    padding: 20px;
+   
+}
+.choose-us-img img{
+    width: 600px;
+    border-radius: 10px;
+}
+.why-choose-icon{
+  
+}
+.why-choose-icon i{
+    margin-right: 20px;
+    padding: 5px;
+   min-width: 50px;
+   font-size: 45px;
+  color: var(--bleu-de-france);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+}
+
+.why-choose-content h1{
+    color: var(--bleu-de-france);
+}
+.why-choose-content-inner{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.why-choose-content-inner p{
+    margin: 5px 10px;
+}
+/* doctors  */
+.doctors-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 20px;
+}
+.doctors-cards .card{
+    border-radius:20px;
+    width: 350px;
+  
+}
+.doctors-cards .card:hover{
+    box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius:20px;
+    width: 350px;
+}
+.card img{
+    border-radius:20px
+}
+.fab{
+    cursor: pointer;
+    border-radius: 50%;
+    padding:10px;   
+    background: skyblue;
+}
+.fab:hover{
+    transform: scale(1.2);
+}
+/* footers  */
+.footer-links{
+    padding:30px;
+    background-color: rgb(181, 198, 212);
+    border-radius: 20px;
+}
+.footer-list{
+    display: flex;
+    justify-content: space-between;
+
+    gap:10px;
+}
+.contact-us{
+    max-width: 450px;
+    
+}
+
+.footer-list ul li{
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    list-style: none;
+    text-wrap: wrap;
+}
+.footer-list ul li:hover{
+    color:orangered;
+}
+.footer-list .contact-us  li:hover{
+    color:black;
+}
+.footer-list ul h3{
+    color:var(--green-blue)    
+}
+.footer-list i{
+   margin-right:10px;
+}
+.location{
+    padding:30px;
+}
+.location iframe{
+   border-radius: 10px;
+}
+.sub-footer{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(169, 194, 213);
+
+}
+@media(min-width:1000px){
+        .about:nth-child(3){
+        flex-direction: row-reverse;
+    }
+}
+@media(max-width:1000px){
+    .choose-us{
+        flex-direction: column;
+    }
+}
+@media(max-width:856px){
+    .about{
+        flex-direction: column;
+    }
+
+    .gallery-images, .doctors-cards, .services-cards{
+        grid-template-columns: auto auto;
+        gap:20px
+    }
+}
+@media(max-width:500px){
+ 
+    .gallery-images,.doctors-cards, .services-cards{
+        grid-template-columns: auto ;
+    }
+}
