@@ -1,6 +1,7 @@
 
 :root{
     --c-dark:#212529;
+    --c-voilet:#6f34fe;
     --c-brand:#4e57d4;
     --c-dark-light:#6970dd;
     --c-dark-rgb:78,87,212;
@@ -25,14 +26,49 @@ img{
     display: flex;
     list-style: none;
     gap: 2rem;
-}
 
+}
+.nav-link ul  a , li {
+    text-decoration: none !important;
+    color:black;
+}
+.nav-link ul li{
+    transition: all 0.4s linear;
+    position: relative;
+}
+.nav-link ul li:hover{
+    color:#fca61f;
+}
+.nav-link ul  li:after{
+    display: block;
+    background-color: #fca61f;
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    transition: all .4s linear;
+}
+ul li:hover:after{
+    width: 100%;
+    left: 0;
+}
 .hero{
-    height: 100vh;
+    padding: 5rem;
+    margin:5rem;
 }
 .hero-img{
-    height: 500px !important;
+    height: 450px !important;
+    overflow: clip;
   
+}
+.hero-text .display-2{
+    color: var(--c-voilet);
+}
+.container{
+    margin-top:5rem;
+    bottom:6rem;
 }
 .services-cards{
     flex:1 1 0;
@@ -40,28 +76,36 @@ img{
    
 }
 .service-card , .card-body{
-
     border-radius: 15px;
     padding: 20px;
 }
 .fa-solid{
     font-size: 7rem;
 }
-
+/* title  */
+.section-title .heading{
+    color:var(--c-voilet);
+}
 .section-title .sub-heading{
+    color:#3f396d;
    width: 20ch;
    margin: auto;
    font-weight: 800;
 }
+#about{
+    background-color: #cfcfcf;
+    padding: 2rem;
+}
 .progress-container{
     gap:1rem;
+    justify-content: center;
    
 }
 .progress-bar{
     cursor: pointer;
     width: 300px;
     height: 300px;
-    background-color: #bfc0cc !important;
+    background-color: white!important;
     border-radius: 10px;
 }
 .progress-bar:hover{
@@ -77,8 +121,83 @@ img{
     transition: none !important; /* Disables Bootstrap's default transitions */
   }
 .hover-up {
-    transition: transform 6s linear ease !important;
+    transition: transform .3s linear !important;
   }
 .hover-up:hover{
-    transform: translateY(-50%);
+    transform: translateY(-20%);
 }
+
+
+/* porfolio  */
+.card{
+    border-radius: 15px !important;
+    overflow: clip;
+
+}
+footer{
+    background-color: #211e39 !important;
+}
+.social-links{
+    cursor: pointer;
+}
+.footer-link ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  
+}
+
+.footer-link ul a, li{
+    text-decoration: none !important;
+    font-weight: 600;
+    transition: color .3s linear;
+}
+.footer-link li:hover{
+    color:yellow;
+}
+#contact a{
+    color: black;
+    text-decoration: none;
+}
+/* social links effect  */
+
+/* Select the first child */
+.social-links i{
+    transition: all .3s linear;
+}
+.social-links > :nth-child(1) {
+    color:pink !important;
+  }
+.social-links > :nth-child(1):hover {
+    color:white !important;
+    background-color:pink !important;
+  }
+  
+  /* Select the second child */
+  .social-links > :nth-child(2) {
+    color:green !important;
+  }
+  .social-links > :nth-child(2):hover {
+    color:white !important;
+    background-color: green !important;
+  }
+  
+  /* Select the third child */
+  .social-links > :nth-child(3) {
+    color:lightskyblue;
+  }
+  .social-links > :nth-child(3):hover {
+    color:white;
+    background-color: lightskyblue;
+  }
+  @media (width>800px) {
+    .hero{
+        height: 90vh;
+    }
+  }
+  @media(max-width:800px){
+    .navbar .nav-link{
+        display: none;
+    }
+  }
+  
