@@ -13,3 +13,5 @@ https://pranjalpal75389.github.io/js/Elixir
 https://pranjalpal75389.github.io/js/usibility
 
 https://pranjalpal75389.github.io/js/portfolio
+
+https://pranjalpal75389.github.io/js/new%20portfolio/
