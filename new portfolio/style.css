@@ -1,0 +1,84 @@
+
+:root{
+    --c-dark:#212529;
+    --c-brand:#4e57d4;
+    --c-dark-light:#6970dd;
+    --c-dark-rgb:78,87,212;
+    --c-body:#727272;
+    --font-base: 'Fira Code',sans-serif;
+    --box-shadow:
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.rounded-pill{
+    font-size: 1.4rem!important;
+}
+.nav-link ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.hero{
+    height: 100vh;
+}
+.hero-img{
+    height: 500px !important;
+  
+}
+.services-cards{
+    flex:1 1 0;
+
+   
+}
+.service-card , .card-body{
+
+    border-radius: 15px;
+    padding: 20px;
+}
+.fa-solid{
+    font-size: 7rem;
+}
+
+.section-title .sub-heading{
+   width: 20ch;
+   margin: auto;
+   font-weight: 800;
+}
+.progress-container{
+    gap:1rem;
+   
+}
+.progress-bar{
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    background-color: #bfc0cc !important;
+    border-radius: 10px;
+}
+.progress-bar:hover{
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+    transition: all  linear ease;
+}
+.global{
+    width: auto !important;
+}
+/* button hover up effect  */
+.btn {
+    transition: none !important; /* Disables Bootstrap's default transitions */
+  }
+.hover-up {
+    transition: transform 6s linear ease !important;
+  }
+.hover-up:hover{
+    transform: translateY(-50%);
+}
