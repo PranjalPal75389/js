@@ -18,8 +18,9 @@
     <nav class="fixed-top bg-white">
         <div class="container-fluid navbar fs-5 px-5 py-2">
             <h1 class="navbar-logo fw-bold">Porfolio</h1>
-            <div class="nav-link ">
-                <ul>
+            <i class="fa-solid fa-bars fs-1 menu-bar " ></i>
+            <div class="nav-link">
+                <ul class="text-center" onclick="toggleMenu()">
                     <a href="#home">
                         <li>Home</li>
                     </a>
@@ -37,19 +38,20 @@
                     </a>
                 </ul>
             </div>
-            <button class="btn btn-warning rounded-pill" href="#contact"><a href="#contact">Contact</a></button>
+            <button class="btn btn-warning rounded-pill contact-button" href="#contact"><a href="#contact" class="text-dark">Contact</a></button>
+
         </div>
     </nav>
     <!-- hero section  -->
     <div class="hero container-fluid row my-5 px-4" id="hero">
-        <div class="hero-text col-lg-7 px-4">
+        <div class="hero-text col-lg-7 px-4" data-aos="fade-right" data-aos-duration="1500">
             <h1>Hello! I am</h1>
             <h1 class="display-2 fw-bolder ">Pranjal Pal</h1>
             <p class="fs-5 text-secondary">I'm A Web Developer having 5 years of experience in expertise of creating website with fully responsive
                 Also with backend part too. </p>
             <button class="btn btn-warning rounded-pill hover-up">Hire Me</button>
         </div>
-        <div class="hero-img col-lg-4 ">
+        <div class="hero-img col-lg-4 " data-aos="fade-left" data-aos-duration="1500">
             <img src="./images/banner-01.webp" alt="hero image">
         </div>
     </div>
@@ -61,8 +63,9 @@
             <h1 class="display-6 sub-heading text-center">Provide Wide Range of
                 Digital Services </h1>
         </div>
-        <div class="row card-deck rounded-1  services-cards ">
-            <div class="card col-lg-4 col-md-6 col-sm-12 service-card text-center ">
+        <div class="row card-deck rounded-1  services-cards mb-5" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card  service-card text-center ">
                 <div class="card-img-top text-warning ">
                     <i class="fa-solid fa-wand-magic-sparkles "></i>
                 </div>
@@ -73,14 +76,16 @@
                     <div class="card-text">
                         Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam. <br>
                        
-                        <button class="btn btn-secondary mt-4
-                        ">  <a href="" >Read More</a></button>
+                        <button class="btn btn-success mt-4
+                        ">  <a href="" class="text-white fw-bold rounded-pill">Read More</a></button>
                     </div>
                 </div>
             </div>
-            <div class="card col-lg-4 col-md-6  col-sm-12 service-card text-center ">
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card service-card text-center ">
                 <div class="card-img-top text-warning  ">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <i class="fa-solid fa-layer-group"></i>
                 </div>
                 <div class="card-body ">
                     <div class="card-title">
@@ -89,27 +94,31 @@
                     <div class="card-text">
                         Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam. <br>
                        
-                        <button class="btn btn-secondary mt-4
-                        ">  <a href="" >Read More</a></button>
+                        <button class="btn btn-success mt-4
+                        ">  <a href="" class="text-white fw-bold rounded-pill">Read More</a></button>
                     </div>
                 </div>
             </div>
-            <div class="card col-lg-4 col-md-6 col-sm-12 service-card text-center ">
-                <div class="card-img-top text-warning  ">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <div class="card-body ">
-                    <div class="card-title">
-                        Web Design
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card  service-card text-center ">
+                    <div class="card-img-top text-warning  ">
+                        <i class="fa-solid fa-icons"></i>>
                     </div>
-                    <div class="card-text ">
-                        Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam. <br>
-                       
-                        <button class="btn btn-secondary mt-4
-                        ">  <a href="" >Read More</a></button>
+                    <div class="card-body ">
+                        <div class="card-title">
+                            Web Design
+                        </div>
+                        <div class="card-text ">
+                            Dolor repellendus temporibus autem quibusdam officiis debitis rerum neces aibus minima veniam. <br>
+                           
+                            <button class="btn btn-success mt-4
+                            ">  <a href=""  class="text-white fw-bold rounded-pill">Read More</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
+
             
 
         </div>
@@ -117,26 +126,25 @@
     </div>
 
 <!-- about skills  -->
-  <div class="container-fluid" id="about">
-    <div class="row">
+  <div class="container-fluid " id="about">
+    <div class="row ">
         <div class="col-lg-7 d-flex flex-wrap progress-container justify-content-center fw-bold fs-2">
             <div class="progress-bar">
-                <div class="global" data-pie='{ "percent": 90,    "colorCircle": "#f1f1f1" }'></div>
-                <p>HTML & CSS</p>
+                <div class="global" data-pie='{ "percent": 90, "colorSlice":"#E34F26",   "colorCircle": "#f1f1f1" }'></div>
+                <p class="fs-6">HTML</p>
             </div>
             <div class="progress-bar">
-                <div class="global" data-pie='{"percent":70,"colorSlice":"black" }'></div>
-                <p>JS</p>
+                <div class="global" data-pie='{ "percent": 75, "colorSlice":"#3b95cf",   "colorCircle": "#f1f1f1" }'></div>
+                <p class="fs-6">CSS</p>
             </div>
             <div class="progress-bar">
-                <div class="global" data-pie='{"percent":60, "colorSlice": "green"}'></div>
-                <p>Bootstrap</p>
+                <div class="global" data-pie='{"percent":70,"colorSlice":"#F7DF1E" }'></div>
+                <p class="fs-6">JS</p>
             </div>
             <div class="progress-bar">
-                <div class="global" data-pie='{"percent":100, "colorSlice": "blue"}'></div>
-                <p>PHP</p>
-            </div>
-            
+                <div class="global" data-pie='{"percent":60, "colorSlice": "#7a09f1"}'></div>
+                <p class="fs-6">Bootstrap</p>
+            </div>    
         </div>
         <div class="col-lg-5">
             <div class="section-title  my-4">
@@ -144,7 +152,7 @@
                 <h1 class="display-6 sub-heading mx-0">Beautiful & Unique Digital Experiences </h1>
                    <p class=" fs-4 text-secondary">Nostrum exercitationem ullam corporis suscipit laborioa nisi ut aliquid exrea commodi consequatur magni dolores aos qui ratione voluptatem nesciunt. </p>
                    <p class=" fs-4 text-secondary">Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano consequntar magni dolores.</p>
-                    <button class="btn btn-warning p-3 rounded-pill hover-up">Download CV</button>
+                    <button class="btn btn-warning p-3 rounded-pill hover-up"><i class="fa-solid fa-download fs-4 p-2"></i> Resume</button>
             </div>
         </div>
     </div>
@@ -161,7 +169,7 @@
    <!-- Testimonial  -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-5">
+            <div class="col-lg-5 testimonial-img" >
                 <img src="./images/tastimonials-img.png" alt="">
             </div>
             <div class="col-lg-7">
@@ -179,9 +187,12 @@
                         <strong>CEO of Company</strong>
                     </div>
                     
+                </div >
+                <div class="comment-arrows">
+                    <i class="fa-solid fa-circle-arrow-left fs-1"></i>
+                    <i class="fa-solid fa-circle-arrow-right fs-1"></i>
                 </div>
-                <i class="fa-solid fa-circle-arrow-left fs-1"></i>
-                <i class="fa-solid fa-circle-arrow-right fs-1"></i>
+                
             </div>
         </div>
     </div>
@@ -194,7 +205,7 @@
         <div class="row g-3">
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
-                    <div class="card-img-top">
+                    <div class="card-img-top blog-card-img">
                         <img src="images/currency-converter.png"  alt="">
                     </div>
                     <div class="card-body">
@@ -213,7 +224,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
-                    <div class="card-img-top">
+                    <div class="card-img-top blog-card-img">
                         <img src="images/currency-converter.png"  alt="">
                     </div>
                     <div class="card-body">
@@ -232,7 +243,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
-                    <div class="card-img-top">
+                    <div class="card-img-top blog-card-img">
                         <img src="images/currency-converter.png" alt="">
                     </div>
                     <div class="card-body">
@@ -259,7 +270,7 @@
             <h1 class="display-6 sub-heading w-auto">Any Questions? Feel Free to Contact</h1>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-down-right" data-aos-duration="1500">
                 <div class="d-flex m-3">
                     <i class="fa-solid fa-location-dot fs-4 text-warning me-4"></i> 
                     <p>121 King Street Melbourne, 3000, Australia (FAKE)</p>
@@ -278,18 +289,18 @@
                     <a href="https://github.com/PranjalPal75389" target="_blank">PranjalPal75389 (GitHub)</a>
                 </div>
             </div>
-            <div class="col-lg-6 ">
-                <form action="" class="form">
+            <div class="col-lg-6 " data-aos="fade-down-left" data-aos-duration="1500">
+                <form action="" class="form" name="submit-to-google-sheet">
                     <div class="form-group outline-warning gap-4">
 
-                        <input type="text" class="form-control m-3" id="name" placeholder="Enter Your Name">
+                        <input type="text" class="form-control m-3" id="name" name="name" placeholder="Enter Your Name">
 
-                        <input type="text" class="form-control m-3" id="email" placeholder="Enter Your Mail">
+                        <input type="text" class="form-control m-3" id="email" name="email" placeholder="Enter Your Mail">
 
-                        <input type="tel" class="form-control m-3" id="mobile-no" placeholder="Enter Your Phone no.">
+                        <input type="tel" class="form-control m-3" id="mobile-no" name="mobile-no" placeholder="Enter Your Phone no.">
 
-                        <textarea type="tel" class="form-control m-3" id="message" placeholder="Enter Your Message"> Enter your Message</textarea><br>
-                        <button class="btn btn-warning rounded-pill px-5 hover-up">Submit</button>
+                        <textarea type="tel" class="form-control m-3" id="message" name="message"  placeholder="Enter Your Message"> Enter your Message</textarea><br>
+                        <button class="btn btn-warning rounded-pill px-5 hover-up" type="submit">Submit</button>
                     </div>
                 </form>
             </div>
@@ -346,7 +357,18 @@
     <script>
         AOS.init();
     </script>
-
+    <!-- script for form submiting  -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwglFyQE0ie7taJwG9sq9WDrge5sw_kRF_EkxCCIkoNW42BHLpp_6QVe-uEX8OhiSb3/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 
 </body>
 
