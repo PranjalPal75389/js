@@ -1,3 +1,4 @@
+
 const menuBtn=document.getElementsByClassName("menu-bar")[0];
 const navBar=document.getElementsByClassName("navbar")[0]
 
