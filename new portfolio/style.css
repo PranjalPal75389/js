@@ -156,6 +156,8 @@ ul li:hover:after {
 }
 .blog-card-img{
   overflow: hidden;
+  height: 200px !important;
+  object-fit: cover;
 }
 .blog-card-img img{
   transition: all .3s ease-in;
