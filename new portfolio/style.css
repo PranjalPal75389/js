@@ -231,7 +231,15 @@ li {
   cursor: pointer;
   display: none !important;
 }
-
+.back-to-btn{
+  background:none !important;
+  cursor: pointer;
+  position: fixed;
+  bottom:1rem;
+  right:1rem;
+  z-index: 1000;
+  background-color: white;
+}
 @media (min-width: 800px) {
   .hero {
     height: 90vh;

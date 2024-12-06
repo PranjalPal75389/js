@@ -18,3 +18,7 @@ const globalConfig = {
   const global = new CircularProgressBar('global', globalConfig);
   global.initial();
 
+  var typed = new Typed('#typing', {
+    strings: ['Pranjal Pal', 'Curious' ,'Learner',  'Pranjal Pal'],
+    typeSpeed: 50,
+  });
