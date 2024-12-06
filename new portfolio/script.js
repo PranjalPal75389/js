@@ -19,6 +19,7 @@ const globalConfig = {
   global.initial();
 
   var typed = new Typed('#typing', {
-    strings: ['Pranjal Pal', 'Curious' ,'Learner',  'Pranjal Pal'],
+    strings: [ 'Pranjal Pal' ,'Student' , 'Curious'],
     typeSpeed: 50,
+    loop:true
   });

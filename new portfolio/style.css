@@ -69,8 +69,14 @@ ul li:hover:after {
   margin: 5rem;
 }
 .hero-img {
+  transition:none ;
+  cursor: pointer;
   height: 450px !important;
   overflow: clip;
+  transition: translate .5s linear !important;
+}
+.hero-img:hover{
+  translate: 10%;
 }
 .hero-text .display-2 {
   color: var(--c-voilet);
@@ -118,6 +124,7 @@ ul li:hover:after {
   border-radius: 10px;
 }
 .progress-bar:hover {
+  box-shadow: 0 0 5px 5px grey;
   transform: scale(1.05);
   transition-duration: 0.5s;
   transition: all linear ease;
@@ -151,8 +158,18 @@ ul li:hover:after {
 /* porfolio  */
 
 .card {
+  cursor: pointer;
   border-radius: 15px !important;
+  border: none;
   overflow: clip;
+  transition: all .5s ease;
+ 
+}
+.card:hover{
+  box-shadow: 0 0 5px 5px grey ;
+}
+.portfolio-cards .card:hover{
+  background-color: #ffbf00;
 }
 .blog-card-img{
   overflow: hidden;
