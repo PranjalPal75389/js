@@ -10,7 +10,6 @@ menuBtn.addEventListener("click", toggleMenu );
 
 const globalConfig = {
     "strokeBottom": 5,
-  
     "round": true,
     /* e.t.c */
   }
@@ -21,5 +20,6 @@ const globalConfig = {
   var typed = new Typed('#typing', {
     strings: [ 'Pranjal Pal' ,'Student' , 'Curious'],
     typeSpeed: 50,
+    backSpeed:50,
     loop:true
   });
