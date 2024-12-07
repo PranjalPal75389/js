@@ -6,6 +6,7 @@
   --c-dark-rgb: 78, 87, 212;
   --c-body: #727272;
   --font-base: "Fira Code", sans-serif;
+  --transition-base: all 0.3s linear;
 }
 * {
   margin: 0;
@@ -40,7 +41,7 @@ li {
   color: black;
 }
 .nav-link ul li {
-  transition: all 0.4s linear;
+  transition: var(--transition-base);
   position: relative;
 }
 .nav-link ul li:hover {
@@ -55,7 +56,7 @@ li {
   height: 3px;
   left: 50%;
   bottom: -5px;
-  transition: all 0.4s linear;
+  transition: var(--transition-base);
 }
 ul li:hover:after {
   width: 100%;
@@ -69,11 +70,10 @@ ul li:hover:after {
   margin: 5rem;
 }
 .hero-img {
-  transition:none ;
   cursor: pointer;
   height: 450px !important;
   overflow: clip;
-  transition: translate .5s linear !important;
+  transition: var(--transition-base) !important;
 }
 .hero-img:hover{
   translate: 10%;
@@ -126,8 +126,7 @@ ul li:hover:after {
 .progress-bar:hover {
   box-shadow: 0 0 5px 5px grey;
   transform: scale(1.05);
-  transition-duration: 0.5s;
-  transition: all linear ease;
+  transition: var(--transition-base);
 }
 .global {
   width: auto !important;
@@ -135,7 +134,7 @@ ul li:hover:after {
 
 /* testimonial  */
 .testimonial-img img{
-  transition: all .5s ease ;
+  transition: var(--transition-base);
   cursor: pointer;
 }
 .testimonial-img img:hover{
@@ -149,7 +148,7 @@ ul li:hover:after {
   transition: none !important; /* Disables Bootstrap's default transitions */
 }
 .hover-up {
-  transition: transform 0.3s linear !important;
+  transition: var(--transition-base) !important;
 }
 .hover-up:hover {
   transform: translateY(-20%);
@@ -162,7 +161,7 @@ ul li:hover:after {
   border-radius: 15px !important;
   border: none;
   overflow: clip;
-  transition: all .5s ease;
+  transition: var(--transition-base);
  
 }
 .card:hover{
@@ -177,7 +176,7 @@ ul li:hover:after {
   object-fit: cover;
 }
 .blog-card-img img{
-  transition: all .3s ease-in;
+  transition: var(--transition-base);
   cursor: pointer;  
 }
 .blog-card-img img:hover{
@@ -199,7 +198,7 @@ footer {
 li {
   text-decoration: none !important;
   font-weight: 600;
-  transition: color 0.3s linear;
+  transition:var(--transition-base);
 }
 .footer-link li:hover {
   color: yellow;
@@ -210,7 +209,7 @@ li {
 }
 
 .social-links i {
-  transition: all 0.3s linear;
+  transition: var(--transition-base)
 }
 .social-links > :nth-child(1) {
   color: pink !important;
