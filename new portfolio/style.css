@@ -199,6 +199,7 @@ footer {
   display: flex;
   list-style: none;
   gap: 2rem;
+  align-items: center;
 }
 
 .footer-link ul a,
@@ -290,6 +291,9 @@ li {
   }
   .menu-bar {
     display: block !important;
+  }
+  .footer-link ul{
+    flex-direction: column;
   }
 }
 
