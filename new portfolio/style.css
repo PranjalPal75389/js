@@ -172,7 +172,7 @@ ul li:hover:after {
   transform: scale(1.03);
   transition: var(--transition-base);
 }
-
+ 
 .global {
   width: auto !important;
 }
