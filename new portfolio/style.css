@@ -112,6 +112,13 @@ ul li:hover:after {
   padding: 20px;
   color: white;
 }
+.service-card .card-title{
+     color:rgb(251, 48, 48);
+     font-size: large;
+}
+.service-card .card-text button a{
+  text-decoration: none ;
+}
 .fa-solid {
   font-size: 7rem;
 }
@@ -145,15 +152,20 @@ ul li:hover:after {
 
 .section-title .sub-heading {
   color: #3f396d;
+  font-size: 2rem;
   width: 20ch;
   margin: auto;
   font-weight: 800;
 }
+
 #about {
   background-color: #cfcfcf;
   padding: 3rem;
 }
 
+#about .section-title .sub-heading {
+  width: auto;
+}
 .progress-container {
   margin-top: 4rem !important;
   gap: 1rem;
