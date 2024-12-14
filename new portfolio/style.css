@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --c-dark: #212529;
@@ -15,25 +15,26 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Poppins", 'Courier New', Courier, monospace;
+  font-family: "Poppins", "Courier New", Courier, monospace;
 }
-body{
-    margin:0;
-    padding: 0;
-    min-width: 350px;
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 350px;
 }
 img {
   width: 100%;
   height: auto;
 }
 
-.container-fluid , .container{
-    padding-top:4em;
+.container-fluid,
+.container {
+  padding-top: 4em;
 }
 .rounded-pill {
   font-size: 1.4rem !important;
 }
-.navbar-logo a{
+.navbar-logo a {
   cursor: pointer;
   text-decoration: none;
 }
@@ -69,7 +70,7 @@ ul li:hover:after {
   width: 100%;
   left: 0;
 }
-.contact-button a{
+.contact-button a {
   text-decoration: none;
 }
 .hero {
@@ -82,7 +83,7 @@ ul li:hover:after {
   overflow: clip;
   transition: var(--transition-base) !important;
 }
-.hero-img:hover{
+.hero-img:hover {
   translate: 10%;
 }
 .hero-text .display-2 {
@@ -95,18 +96,53 @@ ul li:hover:after {
 .services-cards {
   flex: 1 1 0;
 }
-.service-card,
+
+.services-cards .service-card {
+  border-radius: 15px;
+  padding: 20px;
+  background-color: var(--c-dark);
+  color:white;
+
+}
+.service-card:hover {
+  box-shadow: 5px 5px 5px 5px var(--c-brand)  !important;
+}
 .card-body {
   border-radius: 15px;
   padding: 20px;
+  color: white;
 }
 .fa-solid {
   font-size: 7rem;
 }
 /* title  */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .section-title .heading {
   color: var(--c-voilet);
+  width: fit-content;
+  position: relative;
+  cursor: pointer;
 }
+.section-title .heading:after {
+  content: "";
+  height: 5px;
+  width: 0;
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  background-color: red;
+  border-radius: 20px;
+  transition: all 0.5s linear;
+}
+.section-title .heading:hover::after {
+  left: 0;
+  width: 100%;
+}
+
 .section-title .sub-heading {
   color: #3f396d;
   width: 20ch;
@@ -127,27 +163,29 @@ ul li:hover:after {
   cursor: pointer;
   min-width: 250px;
   min-height: 250px;
-  background-color: white !important;
   border-radius: 10px;
+  background-color: var(--c-dark) !important;
+  color:white !important;
 }
 .progress-bar:hover {
-  box-shadow: 0 0 5px 5px grey;
-  transform: scale(1.05);
+  box-shadow:3px 3px 5px 3px var(--c-dark-light);
+  transform: scale(1.03);
   transition: var(--transition-base);
 }
+
 .global {
   width: auto !important;
 }
 
 /* testimonial  */
-.testimonial-img img{
+.testimonial-img img {
   transition: var(--transition-base);
   cursor: pointer;
 }
-.testimonial-img img:hover{
-    transform: scale(1.1);
+.testimonial-img img:hover {
+  transform: scale(1.1);
 }
-.comment-arrows > i{
+.comment-arrows > i {
   cursor: pointer;
 }
 /* button hover up effect  */
@@ -169,24 +207,23 @@ ul li:hover:after {
   border: none;
   overflow: clip;
   transition: var(--transition-base);
- 
 }
-.card:hover{
-  box-shadow: 0 0 5px 5px grey ;
+.card:hover {
+  box-shadow: 0 0 5px 5px grey;
 }
-.portfolio-cards .card:hover{
+.portfolio-cards .card:hover {
   background-color: #ffbf00;
 }
-.blog-card-img{
+.blog-card-img {
   overflow: hidden;
   height: 200px !important;
   object-fit: cover;
 }
-.blog-card-img img{
+.blog-card-img img {
   transition: var(--transition-base);
-  cursor: pointer;  
+  cursor: pointer;
 }
-.blog-card-img img:hover{
+.blog-card-img img:hover {
   transform: scale(1.2);
 }
 footer {
@@ -206,7 +243,7 @@ footer {
 li {
   text-decoration: none !important;
   font-weight: 600;
-  transition:var(--transition-base);
+  transition: var(--transition-base);
 }
 .footer-link li:hover {
   color: yellow;
@@ -217,7 +254,7 @@ li {
 }
 
 .social-links i {
-  transition: var(--transition-base)
+  transition: var(--transition-base);
 }
 .social-links > :nth-child(1) {
   color: pink !important;
@@ -255,12 +292,12 @@ li {
   cursor: pointer;
   display: none !important;
 }
-.back-to-btn{
-  background:none !important;
+.back-to-btn {
+  background: none !important;
   cursor: pointer;
   position: fixed;
-  bottom:1rem;
-  right:1rem;
+  bottom: 1rem;
+  right: 1rem;
   z-index: 1000;
   background-color: white;
 }
@@ -292,8 +329,7 @@ li {
   .menu-bar {
     display: block !important;
   }
-  .footer-link ul{
+  .footer-link ul {
     flex-direction: column;
   }
 }
-

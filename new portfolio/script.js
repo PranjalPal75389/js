@@ -11,6 +11,7 @@ menuBtn.addEventListener("click", toggleMenu );
 const globalConfig = {
     "strokeBottom": 5,
     "round": true,
+    "fontColor": "white",
     /* e.t.c */
   }
   
