@@ -20,7 +20,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 350px;
+
 }
 img {
   width: 100%;
@@ -93,8 +93,8 @@ ul li:hover:after {
   margin-top: 5rem;
   bottom: 6rem;
 }
-.services-cards {
-  flex: 1 1 0;
+.services-cards { 
+  justify-content: center;
 }
 
 .services-cards .service-card {
@@ -102,8 +102,8 @@ ul li:hover:after {
   padding: 20px;
   background-color: var(--c-dark);
   color:white;
-
 }
+
 .service-card:hover {
   box-shadow: 5px 5px 5px 5px var(--c-brand)  !important;
 }
@@ -153,24 +153,26 @@ ul li:hover:after {
 .section-title .sub-heading {
   color: #3f396d;
   font-size: 2rem;
-  width: 20ch;
   margin: auto;
   font-weight: 800;
 }
 
 #about {
   background-color: #cfcfcf;
-  padding: 3rem;
+  padding: 3rem 1.5rem;
 }
 
 #about .section-title .sub-heading {
   width: auto;
 }
 .progress-container {
+  display: grid ;
+  grid-template-columns:  auto auto;
   margin-top: 4rem !important;
   gap: 1rem;
   justify-content: center;
 }
+
 .progress-bar {
   cursor: pointer;
   min-width: 250px;
@@ -193,6 +195,7 @@ ul li:hover:after {
 .testimonial-img img {
   transition: var(--transition-base);
   cursor: pointer;
+  overflow: hidden;
 }
 .testimonial-img img:hover {
   transform: scale(1.1);
@@ -341,7 +344,14 @@ li {
   .menu-bar {
     display: block !important;
   }
+
   .footer-link ul {
     flex-direction: column;
   }
+}
+@media (max-width:600px) {
+  .progress-container {
+    grid-template-columns: auto;
+  }
+  
 }
