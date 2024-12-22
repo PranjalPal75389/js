@@ -6,13 +6,19 @@
 #about,#services,#our-team,#contact{
     padding: 2% 0;
 }
+html body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    overflow-x: hidden;
+}
 .carousel-item img{
     width: 100%;
     height: 90vh;
 }
 .card {
-    padding: 20px;
-    margin: 10px;
+    min-width: 300px;
     border: 1px solid #ccc;
     transition: background-color 0.3s ease;
 }
@@ -20,7 +26,9 @@
 .card.active {
     background-color: #f0a500; /* Active background color */
 }
-
+.contact-img{
+    overflow: hidden;
+}
 @media (max-width:1000px) {
     .carousel-item img{
         height:300px;
