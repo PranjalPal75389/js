@@ -8,7 +8,10 @@
 }
 html body{
     width: 100%;
-    height: 100%;
+    overflow-x: hidden;
+}
+.container , .container-fluid{
+    overflow-x: hidden;
 }
 header{
     overflow-x: hidden;
@@ -33,4 +36,5 @@ header{
     .carousel-item img{
         height:300px;
     }  
+
 }
