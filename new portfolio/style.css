@@ -30,6 +30,7 @@ img {
 .container-fluid,
 .container {
   padding-top: 4em;
+  overflow-x: hidden;
 }
 .rounded-pill {
   font-size: 1.4rem !important;
@@ -242,7 +243,7 @@ ul li:hover:after {
   transform: scale(1.2);
 }
 footer {
-  background-color: #211e39 !important;
+  background-color: #211e39f2 !important;
 }
 .social-links {
   cursor: pointer;
@@ -316,6 +317,7 @@ li {
   z-index: 1000;
   background-color: white;
 }
+
 @media (min-width: 800px) {
   .hero {
     height: 90vh;
