@@ -68,6 +68,7 @@ li{
 }
 #hero h1{
     font-size: 80px;
+    -webkit-text-stroke: 2px rgb(57, 57, 253);
 
 }
 #hero .btn{
@@ -141,6 +142,7 @@ i{
     color: var(--c-brand);
     font-size: 34px;
     flex: none;
+    overflow: hidden;
 }
 
 /* SERVICE */
