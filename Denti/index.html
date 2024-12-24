@@ -10,23 +10,39 @@
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="logo">
-                
-                <img src="images/logo.png" alt="">
+                <img src="images/logo.png" alt="Logo">
                 <span>Denti</span>
             </div>
-            <div class="nav-link container" >
-                    <a href="#">HOME</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#service">SERVICE</a>
-                    <a href="#gallery">GALLERY</a>
-                    <a href="#contact">CONTACT</a>
+    
+            <!-- Navbar Toggler (Bootstrap 5) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Collapsible Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto text-center" style="gap: 1rem;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
                 </ul>
             </div>
         </nav>
     </header>
-
     <!-- About -->
 
     <div class="about-section section" >

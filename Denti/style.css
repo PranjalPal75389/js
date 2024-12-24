@@ -32,57 +32,83 @@
 --green-blue: #1565c0ff;
 --cobalt-blue: #0d47a1ff;
   }
-header{
-    background-color:var(--cobalt-blue);
+
+header {
+    background-color: var(--cobalt-blue);
 }
-header .navbar{
+header .navbar {
     display: flex;
-    flex-shrink: 1;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10%;
 }
-.navbar .logo{
+
+.navbar .logo {
     display: flex;
     cursor: pointer;
     justify-content: center;
     align-items: center;
 }
-.navbar .logo img{
+
+.navbar .logo img {
     margin: 0 10px;
-height: 40px;
+    height: 40px;
 }
-.navbar .logo span{
+
+.navbar .logo span {
     font-size: 40px;
+    color: white; 
 }
-.navbar .nav-link {
-    gap:50px;
-    list-style: none;
+
+
+.navbar .navbar-nav {
     display: flex;
     flex-direction: row;
-   
+    gap: 50px;
 }
-.navbar .nav-link  a{
-    position: relative;
+
+.navbar .navbar-nav .nav-link {
     text-decoration: none;
     text-transform: uppercase;
-    color:white;
+    color: white;
     font-size: 25px;
     transition: color 0.3s ease;
+    position: relative;
 }
-.navbar .nav-link  a::after{
-    position: absolute;
+
+.navbar .navbar-nav .nav-link::after {
     content: '';
-    width: 0%;
+    position: absolute;
+    width: 0;
     height: 3px;
-    bottom: -3px;
+    bottom: 0px;
     left: 0;
-    transition: width 0.3s ease;
     background-color: red;
+    transition: width 0.3s ease;
 }
-.navbar .nav-link a:hover::after{
-  
+
+.navbar .navbar-nav .nav-link:hover::after {
     width: 100%;
+}
+
+
+.navbar-toggler {
+    border-color: white; 
+}
+
+@media (max-width: 991px) {
+    .navbar .navbar-nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+
+    .navbar .logo span {
+        font-size: 35px;
+    }
 }
 .section{
     padding: 10px 2rem;
@@ -192,6 +218,7 @@ height: 40px;
     margin:  0;
     display: flex;
     align-items: center;
+    overflow-x: hidden;
 }
 .choose-us-img{
     padding: 20px;
@@ -304,6 +331,7 @@ height: 40px;
 
 }
 @media(min-width:1000px){
+
         .about:nth-child(3){
         flex-direction: row-reverse;
     }
@@ -324,7 +352,9 @@ height: 40px;
     }
 }
 @media(max-width:500px){
- 
+    .section{
+        padding: 10px 1rem;
+    }
     .gallery-images,.doctors-cards, .services-cards{
         grid-template-columns: auto ;
     }
