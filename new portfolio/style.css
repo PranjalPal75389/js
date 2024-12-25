@@ -30,7 +30,7 @@ img {
 .container-fluid,
 .container {
   padding-top: 4em;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .rounded-pill {
   font-size: 1.4rem !important;
@@ -94,6 +94,7 @@ ul li:hover:after {
   margin-top: 5rem;
   bottom: 6rem;
 }
+/* services  */
 .services-cards { 
   justify-content: center;
 }
