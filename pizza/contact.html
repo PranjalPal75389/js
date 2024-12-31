@@ -13,6 +13,24 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- aos  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+      /* form styling  */
+      .contact-form input::placeholder, .contact-form textarea::placeholder {
+        color: grey;
+      }
+      .contact-form input, .contact-form textarea {
+        color:white !important;
+        border: none;
+        border-bottom: 2px solid grey;
+        background-color: transparent !important;
+      }
+      .contact-form input:focus, .contact-form textarea:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border-bottom-color: red; 
+      }
+    </style>
+    
 </head>
 
 <body style="background: url(./images/bg_4.jpg);">
@@ -82,15 +100,15 @@
                 </div>
             </div>
             <div class="col-lg-7 col-12">
-                <form class="text-white ">
+                <form class="text-white contact-form" name="submit-to-google-sheet">
                     <div class="form-row row ">
                       <div class="form-group col">
                         <label for="inputEmail4">Email</label>
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Your Email">
                       </div>
                       <div class="form-group col">
                         <label for="inputPassword4">Password</label>
-                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Create Password">
                       </div>
                     </div>
                     <div class="form-group ">
