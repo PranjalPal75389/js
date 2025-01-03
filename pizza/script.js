@@ -1,7 +1,6 @@
 const categoryContainers = document.querySelectorAll(".category-container");
 const categoryContainerParent = document.querySelectorAll(".category-container-parent");
 const chooseCategory = document.querySelector(".choose-category");
-
 function defaultActive() {
     // Reset all child elements' background color and text color
     Array.from(chooseCategory.childNodes).forEach(chooseDefault => {

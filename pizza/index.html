@@ -15,8 +15,38 @@
   <!-- aos  -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body style="background: url(./images/bg_4.jpg);">
+<body style="background: url(./images/bg_4.jpg); ">
 
+  <div class="toast-container">
+    <div class="toast-content"> </div>
+  </div>
+  <style>
+    .toast-container{
+      display: flex;
+      position: fixed;
+      align-items: end;
+      padding: 10px;
+      height: 80vh;
+      width: 450px;
+      top:100px;
+      right: 10px;
+    }
+    .toast-content{
+      display: none;
+      text-align: center;
+      width: 100%;
+      border-radius: 10px;
+      height: fit-content;
+      font-size: 2rem;
+      background: black;
+    }
+    .toast-content.not-submitted{
+      background: red;
+    }
+    .toast-content.submitted{
+      background: green;
+    }
+  </style>
     <!-- navbar  -->
     <nav class="navbar navbar-expand-lg fixed-top ">
       <div class="container-fluid bg-dark">
@@ -54,24 +84,6 @@
 
       </div>
     </nav>
-    <!-- my nav  -->
-    <!-- <nav class="container-fluid">
-        <div class="container d-flex justify-content-spacebetween">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-            </div>
-            <div class="nav-list">
-                <ul class="my-auto">
-                   <li><a href="home">Home</a></li>
-                   <li><a href="menu">Menu</a></li>
-                   <li><a href="service">Service</a></li>
-                   <li><a href="blog">Blog</a></li>
-                   <li><a href="about">About</a></li>
-                   <li><a href="contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-     </nav> -->
 
   <!-- hero section  -->
   <div id="carouselExampleCaptions" class="carousel slide">
@@ -150,7 +162,7 @@
 
   </div>
   <!-- welcome  -->
-  <div class="row " height="50px">
+  <div class="row " height="50px" style="background: url(./images/bg_4.jpg);">
     <div class="col-lg-6 px-0">
       <img src="./images/about.jpg" class="img-fluid col-lg-12 h-100" alt="">
     </div>
@@ -167,7 +179,8 @@
     </div>
   </div>
   <!-- services  -->
-  <div class="p-5" style="background: url(./images/food.png);">
+   <div class="service-section" style="background: url(./images/food.png);">
+  <div class="p-5" >
     <div class="container title text-center my-5">
       <h1 class="fw-bold">Services</h1>
       <p class="text-secondary fw-bold">Far far away, behind the word mountains, far from the countries Vokalia and
@@ -212,103 +225,108 @@
 
     </div>
   </div>
+   </div>
+   
   <!-- pizza section  -->
-  <div class=" pizza-section">
-    <div class="text-center m-4">
-      <h2 class="text-white">Hot Pizza Meals</h2>
-      <p class="text-secondary w-50 fs-5 m-auto">Far far away, behind the word mountains, far from the countries Vokalia
-        and Consonantia, there live the blind texts.</p>
+  <div class=" pizza-section " style="background: url(./images/bg_4.jpg);">
+    <div class="overlay">
+      <div class="text-center m-4">
+        <h2 class="text-white">Hot Pizza Meals</h2>
+        <p class="text-secondary w-50 fs-5 m-auto">Far far away, behind the word mountains, far from the countries Vokalia
+          and Consonantia, there live the blind texts.</p>
+      </div>
+      <div class=" row pizza-container">
+        <div class="col-lg-4 col-md-6 col-12 pizza ">
+          <div class="pizza-img">
+            <img src="./images/pizza-1.jpg" alt="">
+          </div>
+          <div class="pizza-text ps-2">
+            <h3 class="text-white">Italian Pizza</h3>
+            <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
+              Consonantia </p>
+            <div class="price-order">
+              <div class="text-warning">$2.19</div>
+              <button class="btn btn-outline-light">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 pizza ">
+          <div class="pizza-img">
+            <img src="./images/pizza-6.jpg" alt="">
+          </div>
+          <div class="pizza-text ps-2">
+            <h3 class="text-white">Italian Pizza</h3>
+            <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
+              Consonantia </p>
+            <div class="price-order">
+              <span class="text-warning">$2.19</span>
+              <button class="btn btn-outline-light">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 pizza flex-grow-1">
+          <div class="pizza-img">
+            <img src="./images/pizza-2.jpg" alt="">
+          </div>
+          <div class="pizza-text ps-2">
+            <h3 class="text-white">Italian Pizza</h3>
+            <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
+              Consonantia </p>
+            <div class="price-order">
+              <span class="text-warning">$2.19</span>
+              <button class="btn btn-outline-light">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pizza-container pizza-container-2">
+        <div class="col-lg-4 col-md-6 col-12 pizza">
+          <div class="pizza-img">
+            <img src="./images/pizza-3.jpg" alt="">
+          </div>
+          <div class="pizza-text ps-2">
+            <h3 class="text-white">Italian Pizza</h3>
+            <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
+              Consonantia </p>
+            <div class="price-order">
+              <span class="text-warning">$2.19</span>
+              <button class="btn btn-outline-light ">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 pizza">
+          <div class="pizza-img">
+            <img src="./images/pizza-4.jpg" alt="">
+          </div>
+          <div class="pizza-text ps-2">
+            <h3 class="text-white">Italian Pizza</h3>
+            <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
+              Consonantia </p>
+            <div class="price-order">
+              <span class="text-warning">$2.19</span>
+              <button class="btn btn-outline-light">Order</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 pizza flex-grow-1">
+          <div class="pizza-img">
+            <img src="./images/pizza-5.jpg" alt="">
+          </div>
+          <div class="pizza-text ps-2">
+            <h3 class="text-white">Italian Pizza</h3>
+            <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
+              Consonantia </p>
+            <div class="price-order">
+              <span class="text-warning">$2.19</span>
+              <button class="btn btn-outline-light">Order</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class=" row pizza-container">
-      <div class="col-lg-4 col-md-6 col-12 pizza ">
-        <div class="pizza-img">
-          <img src="./images/pizza-1.jpg" alt="">
-        </div>
-        <div class="pizza-text ps-2">
-          <h3 class="text-white">Italian Pizza</h3>
-          <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
-            Consonantia </p>
-          <div class="price-order">
-            <div class="text-warning">$2.19</div>
-            <button class="btn btn-outline-light">Order</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12 pizza ">
-        <div class="pizza-img">
-          <img src="./images/pizza-6.jpg" alt="">
-        </div>
-        <div class="pizza-text ps-2">
-          <h3 class="text-white">Italian Pizza</h3>
-          <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
-            Consonantia </p>
-          <div class="price-order">
-            <span class="text-warning">$2.19</span>
-            <button class="btn btn-outline-light">Order</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12 pizza flex-grow-1">
-        <div class="pizza-img">
-          <img src="./images/pizza-2.jpg" alt="">
-        </div>
-        <div class="pizza-text ps-2">
-          <h3 class="text-white">Italian Pizza</h3>
-          <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
-            Consonantia </p>
-          <div class="price-order">
-            <span class="text-warning">$2.19</span>
-            <button class="btn btn-outline-light">Order</button>
-          </div>
-        </div>
-      </div>
+  
     </div>
-    <div class="row pizza-container pizza-container-2">
-      <div class="col-lg-4 col-md-6 col-12 pizza">
-        <div class="pizza-img">
-          <img src="./images/pizza-3.jpg" alt="">
-        </div>
-        <div class="pizza-text ps-2">
-          <h3 class="text-white">Italian Pizza</h3>
-          <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
-            Consonantia </p>
-          <div class="price-order">
-            <span class="text-warning">$2.19</span>
-            <button class="btn btn-outline-light ">Order</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12 pizza">
-        <div class="pizza-img">
-          <img src="./images/pizza-4.jpg" alt="">
-        </div>
-        <div class="pizza-text ps-2">
-          <h3 class="text-white">Italian Pizza</h3>
-          <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
-            Consonantia </p>
-          <div class="price-order">
-            <span class="text-warning">$2.19</span>
-            <button class="btn btn-outline-light">Order</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-12 pizza flex-grow-1">
-        <div class="pizza-img">
-          <img src="./images/pizza-5.jpg" alt="">
-        </div>
-        <div class="pizza-text ps-2">
-          <h3 class="text-white">Italian Pizza</h3>
-          <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vokalia and
-            Consonantia </p>
-          <div class="price-order">
-            <span class="text-warning">$2.19</span>
-            <button class="btn btn-outline-light">Order</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  
   <!-- menu pricing -->
   <div class="menu-section py-5">
     <div class="text-center m-4">
@@ -516,7 +534,7 @@
       </div>
     </div>
   </div>
-<!-- CHOOSE CATERGORY  -->
+<!-- CHOOSE CATEGORY  -->
   <div class="category">
     <div class="row">
       <div class="col-lg-4 " style="background: url(./images/about.jpg);">
@@ -532,7 +550,7 @@
         </div>
         <div class="row category-container-parent">
           <div class="pizza-container category-container d-flex text-center active-category" id="pizza">
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/pizza-1.jpg" alt="">
               </div>
@@ -544,7 +562,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/pizza-2.jpg" alt="">
               </div>
@@ -556,7 +574,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/pizza-3.jpg" alt="">
               </div>
@@ -572,7 +590,7 @@
           </div>
           <!-- pizza container end here  -->
           <div class="drink-container category-container d-flex text-center" id="drink">
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/drink-1.jpg" alt="">
               </div>
@@ -584,7 +602,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/drink-2.jpg" alt="">
               </div>
@@ -596,7 +614,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/drink-3.jpg" alt="">
               </div>
@@ -612,7 +630,7 @@
           </div>
           <!-- drink container end here  -->
           <div class="burger-container category-container d-flex text-center" id="burger">
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/burger-1.jpg" alt="">
               </div>
@@ -624,7 +642,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/burger-2.jpg" alt="">
               </div>
@@ -636,7 +654,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/burger-3.jpg" alt="">
               </div>
@@ -652,7 +670,7 @@
           </div>
           <!-- burger container end here  -->
           <div class="pasta-container category-container d-flex text-center" id="pasta">
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/pasta-1.jpg" alt="">
               </div>
@@ -664,7 +682,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/pasta-2.jpg" alt="">
               </div>
@@ -676,7 +694,7 @@
                 Add to cart
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column pb-3 gap-2">
+            <div class="col-lg-4 col-md-6 col-sm-12 pizza flex-column py-3 gap-2">
               <div class="pizza-img ">
                 <img src="./images/pasta-3.jpg" alt="">
               </div>
@@ -873,12 +891,29 @@
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbx83uVesrQl3puH9rFGPaK0G0WOcz96Uu4FfW7SMpZaLLpi7y4wk_HA51m1UEzS_yIC/exec'
   const form = document.forms['submit-to-google-sheet']
+  const toastContent = document.querySelector(".toast-content")
 
   form.addEventListener('submit', e => {
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
+      .then(response => {
+        console.log('Success!', response)
+        toastContent.classList.add("submitted");
+        toastContent.textContent="Your form is successfully submitted 🥳✅😊";
+        toastContent.style.display="flex";
+        setTimeout(() => {
+          toastContent.style.display="none";
+        }, 4000);
+      })
+      .catch(error => {
+        console.error('Error!', error.message)
+        toastContent.classList.add("not-submitted");
+        toastContent.textContent="Your form is not submitted 😭❌😔";
+        toastContent.style.display="flex";
+        setTimeout(() => {
+          toastContent.style.display="none";
+        }, 4000);
+      })
   })
 </script>
 </body>

@@ -21,6 +21,7 @@ html , body{
 }
 body {
   overflow-x: hidden;
+  /* background-size: cover !important; */
 }
 img {
   max-width: 100%;
@@ -136,13 +137,17 @@ nav .container-fluid .container {
 .service-icon i:hover {
   color: rgb(255, 255, 255);
 }
+.pizza-section , .menu-section , .category  , strong {
+  background: url(./images/bg_4.jpg) !important;
+}
 
 /* pizza section  */
 .pizza-section {
-  background: url(./images/bg_4.jpg);
   padding: 3rem 0;
 }
 .pizza-container {
+  background: url(./images/bg_4.jpg) !important ;
+
   display: flex;
   justify-content: center;
 }
@@ -153,7 +158,7 @@ nav .container-fluid .container {
   justify-content: center;
   align-items: center;
   overflow: none;
-  background: url(./images/bg_4.jpg);
+
 }
 .pizza .pizza-img {
   flex: 1;
@@ -188,7 +193,7 @@ p,
 }
 /* menu pricing  */
 .menu-section {
-  background: url(./images/bg_4.jpg);
+
 }
 .menu {
   display: flex;
@@ -218,7 +223,7 @@ p,
 }
 .menu-name-price h5,
 strong {
-  background: url(./images/bg_4.jpg);
+
   z-index: 0;
   overflow: none;
 }
@@ -266,9 +271,11 @@ strong {
     background: url(./images/bg_2.jpg);
 }
 .achivement-section .overlay , .category .overlay {
-  background: rgba(0, 0, 0, .9);
+  background: rgba(0, 0, 0, .8);
 }
-
+ .service-content p{
+  color: rgba(0, 0, 0, 0.658) !important;
+ }
 .achivement-section .service-icon{
     color: rgb(255, 221, 0);
 }
